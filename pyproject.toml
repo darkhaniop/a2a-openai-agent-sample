@@ -1,0 +1,41 @@
+[project]
+name = "a2a-openai-agent-sample"
+version = "0.1.0"
+description = "A sample agent (CurrencyAgent) utilizing the OpenAI Agents API and served via the A2A protocol."
+readme = "README.md"
+requires-python = ">=3.13, <4"
+keywords = ["openai-agents", "a2a-protocol"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "asyncio>=3.4.3",
+    "click>=8.1.8",
+    "httpx>=0.28.1",
+    "httpx-sse>=0.4.0",
+    "pydantic>=2.10.6",
+    "sse-starlette>=2.2.1",
+    "jwcrypto>=1.5.6",
+    "pyjwt>=2.10.1",
+    "a2a-samples",
+    "openai-agents>=0.0.9",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/darkhaniop/a2a-openai-agent-sample"
+
+[build-system]
+requires = ["setuptools>=78"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv.sources]
+a2a-samples = { git = "https://github.com/google/A2A.git", subdirectory = "samples/python" }
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+]
