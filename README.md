@@ -1,6 +1,6 @@
-# A2A + OpenAI-Agents API Sample
+# A2A + OpenAI-Agents SDK Sample
 
-A sample agent (CurrencyAgent) utilizing the [OpenAI Agents API](https://github.com/openai/openai-agents-python) and served via the A2A protocol.
+A sample agent (CurrencyAgent) utilizing the [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) and served via the A2A protocol.
 
 ---
 
@@ -9,7 +9,7 @@ A sample agent (CurrencyAgent) utilizing the [OpenAI Agents API](https://github.
 ## Prerequisites
 
 - Python 3.13
-- UV
+- uv
 
 ## Running
 
@@ -40,7 +40,7 @@ A sample agent (CurrencyAgent) utilizing the [OpenAI Agents API](https://github.
    uv run python -m a2a_openai_agent_sample --port 23232
    ```
 
-5. In another terminal, run one of the clients from `a2a-samples` according to the instruction in their README. For example, navigate to the directory with your local copy of `A2A` and launch the CLI client:
+5. In another terminal, run one of the sample clients according to the instructions in `a2a-samples` [README](https://github.com/google/A2A/blob/72b60eb6e6f28284a1d7b3723f4f59057153e7c4/samples/python/README.md). For example, navigate to the directory with your local copy of `A2A` and launch the CLI client:
    ```bash
    cd A2A
    cd samples/python
