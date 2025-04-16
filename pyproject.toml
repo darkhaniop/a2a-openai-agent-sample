@@ -13,7 +13,6 @@ classifiers = [
 ]
 
 dependencies = [
-    "asyncio>=3.4.3",
     "click>=8.1.8",
     "httpx>=0.28.1",
     "httpx-sse>=0.4.0",
