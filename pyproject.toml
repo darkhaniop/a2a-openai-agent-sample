@@ -20,8 +20,8 @@ dependencies = [
     "sse-starlette>=2.2.1",
     "jwcrypto>=1.5.6",
     "pyjwt>=2.10.1",
-    "a2a-samples",
     "openai-agents>=0.0.9",
+    "a2a-samples",
 ]
 
 [project.urls]
@@ -31,10 +31,10 @@ dependencies = [
 requires = ["setuptools>=78"]
 build-backend = "setuptools.build_meta"
 
-[tool.uv.sources]
-a2a-samples = { git = "https://github.com/google/A2A.git", subdirectory = "samples/python" }
-
 [dependency-groups]
 dev = [
     "black>=25.1.0",
 ]
+
+[tool.uv.sources]
+a2a-samples = { git = "https://github.com/google/A2A.git", subdirectory = "samples/python", rev = "a8c5420b91f03dcce0280e0f5964b4052ca8a315" }

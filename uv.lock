@@ -25,7 +25,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "a2a-samples", git = "https://github.com/google/A2A.git?subdirectory=samples%2Fpython" },
+    { name = "a2a-samples", git = "https://github.com/google/A2A.git?subdirectory=samples%2Fpython&rev=a8c5420b91f03dcce0280e0f5964b4052ca8a315" },
     { name = "click", specifier = ">=8.1.8" },
     { name = "httpx", specifier = ">=0.28.1" },
     { name = "httpx-sse", specifier = ">=0.4.0" },
@@ -42,7 +42,7 @@ dev = [{ name = "black", specifier = ">=25.1.0" }]
 [[package]]
 name = "a2a-samples"
 version = "0.1.0"
-source = { git = "https://github.com/google/A2A.git?subdirectory=samples%2Fpython#be588f48b3a1c3786f16fd34a6ddf105e140b018" }
+source = { git = "https://github.com/google/A2A.git?subdirectory=samples%2Fpython&rev=a8c5420b91f03dcce0280e0f5964b4052ca8a315#a8c5420b91f03dcce0280e0f5964b4052ca8a315" }
 dependencies = [
     { name = "httpx" },
     { name = "httpx-sse" },
