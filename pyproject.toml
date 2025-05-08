@@ -3,7 +3,7 @@ name = "a2a-openai-agent-sample"
 version = "0.1.0"
 description = "A sample agent (CurrencyAgent) utilizing the OpenAI Agents API and served via the A2A protocol."
 readme = "README.md"
-requires-python = ">=3.13, <4"
+requires-python = ">=3.12, <4"
 keywords = ["openai-agents", "a2a-protocol"]
 classifiers = [
     "Intended Audience :: Developers",
@@ -37,4 +37,4 @@ dev = [
 ]
 
 [tool.uv.sources]
-a2a-samples = { git = "https://github.com/google/A2A.git", subdirectory = "samples/python", rev = "a8c5420b91f03dcce0280e0f5964b4052ca8a315" }
+a2a-samples = { git = "https://github.com/google/A2A.git", subdirectory = "samples/python", rev = "35f51ce9debe016541111e4a34b2d88fb1d830d2" }
