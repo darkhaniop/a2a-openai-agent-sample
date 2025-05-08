@@ -40,11 +40,11 @@ A sample agent (CurrencyAgent) utilizing the [OpenAI Agents SDK](https://github.
    uv run python -m a2a_openai_agent_sample --port 23232
    ```
 
-5. In another terminal, run one of the sample clients according to the instructions in `a2a-samples` [README](https://github.com/google/A2A/blob/72b60eb6e6f28284a1d7b3723f4f59057153e7c4/samples/python/README.md). For example, navigate to the directory with your local copy of `A2A` and launch the CLI client:
+5. In another terminal, run one of the sample clients according to the instructions in `a2a-samples` (see [google/A2A:samples/python/hosts/](https://github.com/google/A2A/tree/main/samples/python/hosts)). For example, navigate to the directory with your local copy of `A2A` and launch the CLI client:
    ```bash
    cd A2A
-   cd samples/python
-   uv run hosts/cli --agent http://localhost:10101
+   cd samples/python/hosts/cli
+   uv run . --agent http://localhost:10101
    ```
 
 ## Example prompts
@@ -65,6 +65,6 @@ A sample agent (CurrencyAgent) utilizing the [OpenAI Agents SDK](https://github.
 - *User*: What was the conversion rate the other way around?
 - *Agent*: The exchange rate from British pounds to USD on March 1, 2021, was 1.3925 USD for 1 GBP.
 
-## Authors
+## Acknowledgements
 
 The code in this repository is meant to reproduce the functionality of the `langchain` agent from the [`a2a-samples`](https://github.com/google/A2A) project and is largely derived from scripts in that repository. It uses `task_manager.py` and `__main__.py` (from `agents/langchain`) with only adjusted import statements. A copy of the original LICENSE file from `a2a-samples` is in [original-a2a-samples-LICENSE.txt](./original-a2a-samples-LICENSE.txt).
